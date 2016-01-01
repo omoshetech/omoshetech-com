@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Ruby で末尾呼び出し最適化する方法"
-categories: Ruby
+categories: [技術, Ruby]
+featured_image: shutterstock_248969473
 ---
 Ruby で RubyVM のオプション設定を変更して評価することで末尾呼び出し最適化する方法を説明します。本記事は処理系依存のため YARV が搭載された Ruby 処理系のみに対応しています。
 

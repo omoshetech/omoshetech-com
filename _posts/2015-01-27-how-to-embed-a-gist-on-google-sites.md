@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Gist を Google Sites に埋め込む方法"
-categories: メモ
+categories: [技術, メモ]
+featured_image: shutterstock_83090794
 ---
 Gist を Google Sites に Google Gadgets を使って埋め込む方法を説明します。
 

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Autocomplete API で SEO キーワードを取得する方法"
-categories: メモ
+categories: [技術, メモ]
+featured_image: shutterstock_188375483
 ---
 Google 検索が提供している Autocomplete の機能を利用できる非公式 API を利用して SEO キーワードの一覧を取得する方法について説明します。
 

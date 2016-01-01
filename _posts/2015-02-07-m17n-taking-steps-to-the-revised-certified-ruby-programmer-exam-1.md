@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "多言語化 - Ruby 技術者認定試験改訂対策 #1"
-categories: Ruby
+categories: [技術, Ruby]
+featured_image: photo-1415302199888-384f752645d0
 ---
 [Ruby 技術者認定試験制度]の改訂により Ruby のバージョンが 1.8 から 2.1 になったので、その変更点を試験対策の観点で [Ruby 技術者認定試験改訂のお知らせ]を参考にしつつまとめていきます。第1回は多言語化についてです。
 

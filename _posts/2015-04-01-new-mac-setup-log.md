@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "新しい Mac の設定ログ"
-categories: メモ
+categories: [技術, メモ]
+featured_image: shutterstock_237764383
 ---
 [新しい Mac を英語環境で設定する方法]の続きになる記事です。個人的な設定ログなのでご参考までにどうぞ。
 

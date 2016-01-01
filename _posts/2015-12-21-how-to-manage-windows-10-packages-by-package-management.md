@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "PackageManagement で Windows 10 のアプリケーションを管理する方法"
-categories: メモ
+categories: [技術, メモ]
+featured_image: shutterstock_134347991
 ---
 Windows 10 から標準搭載されている PowerShell 5.0 の PackageManagement モジュールというパッケージマネージャーについて解説します。このパッケージマネージャーに [Chocolatey] をパッケージプロバイダーとして追加してアプリケーションをインストールします。
 
@@ -63,5 +64,8 @@ Windows 10 から標準搭載されているパッケージマネージャーに
 * [about_PackageManagement - TechNet]
 
 [Chocolatey]: https://chocolatey.org
+{:target="_blank"}
 [about_Execution_Policies - TechNet]: https://technet.microsoft.com/en-us/library/hh847748.aspx
+{:target="_blank"}
 [about_PackageManagement - TechNet]: https://technet.microsoft.com/en-us/library/dn927162.aspx
+{:target="_blank"}

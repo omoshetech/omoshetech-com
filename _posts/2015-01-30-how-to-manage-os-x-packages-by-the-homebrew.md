@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Homebrew で OS X のコマンドラインツールを管理する方法"
-categories: メモ
+categories: [技術, メモ]
+featured_image: photo-1416934625760-d56f5e79f6fe
 ---
 OS X のコマンドラインツールを管理する [Homebrew][Homebrew — The missing package manager for OS X] というパッケージマネージャーについて解説します。Mac の環境構築に関わる記事で登場することが多いツールなのでご存知の方も多いと思います。この記事では Homebrew でよく使うコマンドについても説明します。
 

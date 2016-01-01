@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "生産性を高める社内コンピューターを選ぶ方法"
-categories: 社内情報システム
+categories: [経営, 社内情報システム]
+featured_image: shutterstock_203308630
 ---
 スタートアップの生産性が高くなるように社内コンピューターを選ぶ方法についての記事です。OS の選び方・ハードウェアの選び方・Windows と Mac の具体的なコンピューターの選び方の順で説明します。
 

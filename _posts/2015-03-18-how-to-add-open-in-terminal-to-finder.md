@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "ショートカットメニューに「ターミナルで開く」を追加する方法"
-categories: メモ
+categories: [技術, メモ]
+featured_image: shutterstock_209356801
 ---
 Finder で選択したフォルダのショートカットメニューに Automator と AppleScript を用いて「ターミナルで開く」という項目を追加する方法を説明します。
 

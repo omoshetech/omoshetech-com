@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "rbenv で Ruby 環境を管理する方法"
-categories: Ruby
+categories: [技術, Ruby]
+featured_image: shutterstock_196053107
 ---
 Ruby の環境を管理する [rbenv][sstephenson/rbenv - GitHub] というツールについて解説します。OS X には標準で Ruby が含まれていますが、標準の Ruby 環境に変更を加えるのは避けたいところです。なので、標準の Ruby 環境と切り離された Ruby 環境を rbenv で作成して管理してみましょう。
 

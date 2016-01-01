@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Anaconda と OpenCV をインストールする方法"
-categories: メモ
+categories: [技術, メモ]
+featured_image: d5e1ad1d
 ---
 Python と科学計算パッケージのディストリビューションの [Anaconda] とコンピュータービジョンライブラリの [OpenCV] をインストールする方法を説明します。
 

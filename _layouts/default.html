@@ -1,20 +1,14 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+{% include head.html %}<body class="single single-post single-format-standard sidebar-primary page">
 
-  {% include head.html %}
+  <!--[if lt IE 8]>
+    <div class="alert alert-warning">
+      ご使用のブラウザは非常に古いものです。<a href="http://browsehappy.com/">ブラウザをアップグレードすれば</a>より良い体験ができます。    </div>
+  <![endif]-->
 
-  <body>
+{% include header.html %}
+{{ content }}{% include footer.html %}
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
+</body>
 </html>

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Ruby Association Certified Ruby Programmer Silver version 2.1"
-categories: Ruby
+categories: [技術, Ruby]
+featured_image: shutterstock_172367246
 ---
 [Ruby 技術者認定試験制度]の Ruby Association Certified Ruby Programmer Silver version 2.1 を取得する道のりについて書いています。勉強期間は2015年1月25日〜2月2日の9日間です。
 

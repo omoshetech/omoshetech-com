@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "iTunes のイコライザーに Perfect プリセットを追加する方法"
-categories: メモ
+categories: [技術, メモ]
+featured_image: shutterstock_189602912
 ---
 iTunes にどんな音楽にも対応した完璧なイコライザー設定を追加する方法を説明します。
 

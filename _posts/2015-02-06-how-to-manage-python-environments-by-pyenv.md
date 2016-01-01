@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "pyenv で Python 環境を管理する方法"
-categories: メモ
+categories: [技術, メモ]
+featured_image: shutterstock_130179881
 ---
 Python の環境を管理する [pyenv][yyuu/pyenv - GitHub] というツールについて解説します。OS X には標準で Python が含まれていますが、標準の Python 環境に変更を加えるのは避けたいところです。なので、標準の Python 環境と切り離された Python 環境を pyenv で作成して管理してみましょう。
 
