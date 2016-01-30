@@ -1,6 +1,13 @@
----
-layout: default
----
+<!doctype html>
+<html class="no-js" lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+{% include post-head.html %}<body class="single single-post single-format-standard sidebar-primary page">
+
+  <!--[if lt IE 8]>
+    <div class="alert alert-warning">
+      ご使用のブラウザは非常に古いものです。<a href="http://browsehappy.com/">ブラウザをアップグレードすれば</a>より良い体験ができます。    </div>
+  <![endif]-->
+
+{% include post-header.html %}
   <div class="wrap container" role="document">
     <div class="content row">
       <main class="main" role="main">
@@ -19,3 +26,7 @@ layout: default
           </footer>
   </article>
       </main><!-- /.main -->
+{% include footer.html %}
+
+</body>
+</html>

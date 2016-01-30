@@ -1,9 +1,12 @@
 # Site settings
 title: おもしぇてっく
-description: >
-  スタートアップの経営者とエンジニアに役立ちそうなことを記事にしています。
-  このブログをきっかけに一緒に働きたいという経営者やエンジニアが見つかるといいなと思います。
+subtitle: スタートアップの経営者とエンジニアに向けた情報発信
+description: スタートアップの経営者とエンジニアに役立ちそうなことを記事にしています。このブログをきっかけに一緒に働きたいという経営者やエンジニアが見つかるといいなと思います。
 url: https://omoshetech.com
+
+# Plugins
+gems:
+  - jekyll-gist
 
 # Conversion
 markdown: kramdown
@@ -14,3 +17,6 @@ permalink: /:title/
 # Markdown Processors
 kramdown:
   auto_ids: false
+
+# Pagination
+paginate_relative_path: /page/:num/
