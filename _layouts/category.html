@@ -44,7 +44,7 @@
 
   {% assign paginate_relative_path = site.paginate_relative_path | default: '/page:num/' %}
   {% assign relative_path = paginate_relative_path | replace: ':num', paginator.page %}
-  {% assign url = page.url | replace: relative_path, '/' %}
+  {% assign url = page.url | replace: '/index.html', '/' | replace: relative_path, '/' %}
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
