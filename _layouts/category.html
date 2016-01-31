@@ -1,0 +1,70 @@
+<!doctype html>{%
+  assign paginator = page.paginator %}
+<html class="no-js" lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+{% include category-head.html %}<body class="archive category sidebar-primary">
+
+  <!--[if lt IE 8]>
+    <div class="alert alert-warning">
+      ご使用のブラウザは非常に古いものです。<a href="http://browsehappy.com/">ブラウザをアップグレードすれば</a>より良い体験ができます。    </div>
+  <![endif]-->
+
+{% include category-header.html %}
+  <div class="wrap container" role="document">{% assign paginator = page.paginator %}
+    <div class="content row">
+      <main class="main" role="main">{% assign offset = paginator.page | minus: 1 | times: paginator.per_page %}
+        {{ content }}  <h1>{{ page.category }}</h1>
+  <p>{{ page.description }}</p>
+</div>
+
+{% for post in site.categories[page.category] limit: paginator.per_page offset: offset %}  <article class="post type-post status-publish format-standard has-post-thumbnail hentry">
+  <header>
+    <h2 class="entry-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+  </header>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="entry-meta">
+        <img width="1200" height="630" src="{{ site.baseurl }}/assets/{{ post.featured_image }}.jpg" class="img-responsive wp-post-image" alt=""><time class="updated" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y年%-m月%-d日' }}</time>
+<div class="addthis_sharing_toolbox pull-right" data-url="{{ site.url }}{{ post.url }}" data-title="{{ post.title }}"></div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="entry-summary">
+        <p>{{ post.excerpt | strip_html | strip_newlines }}</p>
+<p> <a href="{{ post.url | prepend: site.baseurl }}" class="more-link">続きを読む</a></p>
+      </div>
+    </div>
+  </div>
+</article>
+{% endfor %}
+{% if paginator.total_pages > 1 %}
+<nav class="post-nav">
+<ul class="pagination">
+  {% if paginator.previous_page %}
+    <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">«</a></li>
+  {% endif %}
+
+  {% assign paginate_relative_path = site.paginate_relative_path | default: '/page:num/' %}
+  {% assign relative_path = paginate_relative_path | replace: ':num', paginator.page %}
+  {% assign url = page.url | replace: relative_path, '/' %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <li class="active"><span>{{ page }}</span></li>
+    {% elsif page == 1 %}
+      <li><a href="{{ url | append: '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+    {% else %}
+      <li><a href="{{ url | append: paginate_relative_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">»</a></li>
+  {% endif %}
+</ul>
+</nav>
+{% endif %}
+    </main>
+{% include footer.html %}
+
+</body>
+</html>

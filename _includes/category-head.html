@@ -1,0 +1,34 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} Feed" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+  <title>{{ page.category }} - {% if 2 <= paginator.page %}ページ {{ paginator.page }} / {{ paginator.total_pages }} - {% endif %}{{ site.title }}</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v2.3.4 - https://yoast.com/wordpress/plugins/seo/ -->
+{% if 2 <= paginator.page %}<meta name="robots" content="noindex,follow"/>
+{% endif %}<meta name="description" content="{{ page.description }}"/>
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+{% if paginator.previous_page %}<link rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | prepend: site.url }}" />
+{% endif %}{% if paginator.next_page %}<link rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: site.url }}" />
+{% endif %}<meta property="og:locale" content="ja_JP" />
+<meta property="og:type" content="object" />
+<meta property="og:title" content="{{ page.category }} - {{ site.title }}" />
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="fb:admins" content="100006357248779" />
+<meta property="og:image" content="{{ site.url }}/assets/logo-ogp.png" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:description" content="{{ page.description }}"/>
+<meta name="twitter:title" content="{{ page.category }} - {{ site.title }}"/>
+<meta name="twitter:site" content="@omoshetech"/>
+<meta name="twitter:domain" content="おもしぇてっく"/>
+<meta name="twitter:image:src" content="{{ site.url }}/assets/logo-ogp.png"/>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" href="{{ "/css/syntax-highlighting.css" | prepend: site.baseurl }}">
+</head>
