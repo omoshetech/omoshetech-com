@@ -6,6 +6,8 @@ url: https://omoshetech.com
 
 # Plugins
 gems:
+  - jekyll-sitemap
+  - jekyll-feed
   - jekyll-gist
 
 # Conversion
